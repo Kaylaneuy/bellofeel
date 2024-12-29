@@ -1,0 +1,39 @@
+.carousel-item {
+    position: relative;
+  }
+  
+  .carousel-caption {
+    position: absolute; /* Garante que o conteúdo ficará sobre a imagem */
+    top: 33%;           /* Alinha o conteúdo no meio verticalmente */
+    left: 50%;          /* Alinha o conteúdo no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o conteúdo para o centro exato */
+    text-align: center;
+    color: white; /* Garante que o texto seja visível em cima da imagem */
+
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Ajuste da largura da caption (opcional) */
+  }
+  
+  .carousel-caption h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .carousel-caption .btn {
+    font-size: 1rem;
+  }
+  
+  .gradient-bg {
+    background: linear-gradient(90deg, #F8455B 0%, #A53A47 100%);
+  }
+
+  .form-control::placeholder {
+    color: white; /* Cor branca para o placeholder */
+    opacity: 1; /* Garante que o placeholder tenha opacidade total */
+  }
