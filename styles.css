@@ -1,39 +1,49 @@
-.carousel-item {
-    position: relative;
-  }
+html {
+  font-size: 16px;
+  font-family: "CODEC-COLD-LIGHT-TRIAL", serif;
+
+  width: 100vw;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+}
+
+header {
   
-  .carousel-caption {
-    position: absolute; /* Garante que o conteúdo ficará sobre a imagem */
-    top: 33%;           /* Alinha o conteúdo no meio verticalmente */
-    left: 50%;          /* Alinha o conteúdo no meio horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta o conteúdo para o centro exato */
+}
+ .icon {
+    position: fixed;
+    bottom: 60px;
+    right: 30px;
+    font-size: 30px;
+    background-color: #01e675;
+    color: #ffffff;
+    border-radius: 50%;
+    padding: 3%;
+    width: 50px;
+    height: 50px;
     text-align: center;
-    color: white; /* Garante que o texto seja visível em cima da imagem */
+    text-decoration: none;
+    z-index: 100;
+    box-shadow: 2px 2px 2px #c0bdbd;
+    }
 
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%; /* Ajuste da largura da caption (opcional) */
+    .icon.fab{
+    padding-top: 9px;
   }
-  
-  .carousel-caption h5 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .carousel-caption p {
-    font-size: 1rem;
-    margin-bottom: 15px;
-  }
-  
-  .carousel-caption .btn {
-    font-size: 1rem;
-  }
-  
-  .gradient-bg {
-    background: linear-gradient(90deg, #F8455B 0%, #A53A47 100%);
-  }
-
-  .form-control::placeholder {
-    color: white; /* Cor branca para o placeholder */
-    opacity: 1; /* Garante que o placeholder tenha opacidade total */
+    
+   .icon:hover{
+    background-color: #fff;
+    color: #029e3b;
+    font-weight: 900;
+    box-shadow: 2px 2px 20px #5fe690;
   }
