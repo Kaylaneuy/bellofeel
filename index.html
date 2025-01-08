@@ -260,6 +260,26 @@
 
       <!-- Instagram -->
       <h1>FAZER DEPOIS</h1>
+
+      <link rel="stylesheet" href="styles.css/owl.carousel.min.css">
+      <link rel="stylesheet" href="styles.css/owl.theme.default.min.css">
+
+      <script type="text/javascript" src="js/instafeed.min.js"></script>
+
+      <script src="js/jquery.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+
+      <div id="instafeed"></div>
+      <script type="text/javascript">
+        var feed = new InstaFeed({
+          acessToken:'o token bct',
+        limit: 4,
+        template: '<div class="item"><a href="{{link}}"  target="_blank"><img title="{{caption}}" src="{{image}}" /></a></div>'
+
+        });
+        feed.run();
+      </script>
+
       <!-- Agende sua transformação -->
 
       <section>
