@@ -15,6 +15,11 @@ html {
   
 }
 
+input::placeholder {
+  color: darkgray;
+  font-weight: bold;
+}
+
 button, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
@@ -146,7 +151,7 @@ main {
 #sobre-nos {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
 
@@ -159,10 +164,8 @@ main {
 }
 
 #sobre-nos > div {
-  width: 100%;
+  width: 90%;
   text-align: center;
-
-  padding: 0 .5rem;
 }
 
 #sobre-nos > div span {
@@ -175,11 +178,11 @@ main {
 #sobre-nos > div:nth-child(2) {
   margin-top: 2rem;
 
-  padding: 1rem .5;
+  padding-bottom: 1rem;
   
 
   display: flex;
-  width: 100%;
+  width: 90%;
   align-items: flex-start;
   justify-content: center;
 }
@@ -206,10 +209,10 @@ main {
   font-weight: bold;
 
   background: rgb(133,99,61);
-  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%, rgba(238,199,137,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%, rgba(238,199,137,1) 100%);
-  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%, rgba(238,199,137,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#eec789",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
   cursor: pointer;
 }
 
@@ -218,14 +221,17 @@ main {
 #destaque-do-mes {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   width: 100%;
 
   padding: 1rem .5rem;
 
   background-color: #fefaf5;
+}
 
+#destaque-do-mes > button {
+  display: none;
 }
 
 #destaque-do-mes > span {
@@ -238,9 +244,11 @@ main {
 
 
 #destaque-do-mes p {
-  text-align: initial;
+  text-align: center;
   color: #7e7260;
 }
+
+/* Cards destaque do mes */
 
 .card {
   background-color: white;
@@ -249,6 +257,24 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  
+  padding: 2rem 0 ;
+  margin: 1rem 0 ;
+
+  border-radius: .5rem;
+}
+
+.card > div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card > div:nth-child(2) > img {
+  width: 100%;
+  max-height: 16rem;
 }
 
 .card > div > span {
@@ -263,7 +289,7 @@ main {
 }
 
 .card > div > p {
-  text-align: center;
+  text-align: justify;
 }
 
 
@@ -278,12 +304,364 @@ main {
   font-weight: bold;
 
   background: rgb(133,99,61);
-  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%, rgba(238,199,137,1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%, rgba(238,199,137,1) 100%);
-  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%, rgba(238,199,137,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#eec789",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
   cursor: pointer;
+
+  margin-bottom: 1rem;
 }
+
+
+
+/* Conheça nossas unidades */
+
+#unidades {
+  width: 100%;
+  height: auto;
+
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgb(232,208,174);
+  background: -moz-linear-gradient(90deg, rgba(232,208,174,1) 0%, rgba(196,164,111,0.3) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(232,208,174,1) 0%, rgba(196,164,111,0.3) 100%);
+  background: linear-gradient(90deg, rgba(232,208,174,1) 0%, rgba(196,164,111,0.3) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d0ae",endColorstr="#c4a46f",GradientType=1);
+
+  padding-bottom: 1rem;
+}
+
+#unidades > div {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+
+#unidades > div button {
+  width: 15rem;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: .5rem;
+  color: white;
+  font-weight: bold;
+  align-self: center;
+  background: rgb(133,99,61);
+  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  cursor: pointer;
+  margin-bottom: 1rem;
+  padding: .5rem;
+}
+
+#unidades > div > span {
+  font-size: 2rem;
+  color: #5c5346;
+  font-weight: 700;
+
+  text-align: center;
+}
+
+#unidades > div img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+
+/* Especialidades */
+
+#especialidades {
+  width: 100%;
+  height: auto;
+
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #fefaf5;
+
+  border-radius: .5rem;
+}
+
+#especialidades > div {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 1rem;
+
+
+}
+
+
+.card > div > div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+
+  width: 90%;
+}
+
+.card > div > div > div > img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+#especialidades > div > span {
+  font-size: 2rem;
+  color: #5c5346;
+  font-weight: 500;
+
+  text-align: center;
+}
+
+#especialidades > div > p {
+  text-align: initial;
+  color: #7e7260;
+}
+
+#especialidades > div  > button {
+  color: white;
+  background: rgb(133,99,61);
+  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  cursor: pointer;
+  height: 3rem;
+  padding: .5rem;
+  border-radius: 0.5rem;
+}
+
+/* Cards das especialidades */
+.card > div > div > span {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: left;
+}
+.card > div > div > p {
+  color: #7e7260;
+}
+
+
+/* BellaFeel Academy */
+
+#academy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+
+  padding: 1rem .5rem;
+
+  background-color: #fefaf5;
+}
+
+#academy > div {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#academy > div > span {
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 100%;
+  text-align: c;
+}
+
+#academy > div > p {
+  color: #7e7260; 
+}
+
+/* Formulário Academy */
+
+#academy-formulario {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#academy-formulario > form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+}
+
+#academy-formulario > form > input {
+  all: unset;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  background: transparent;
+  border: .17rem solid rgba(198,165,112,.7);
+  
+   /* this doesn't work */
+  padding-left: .5rem;
+  border-radius: .5rem;
+}
+
+#academy-formulario > form > button[type="submit"] {
+  all: unset;
+  color: white;
+  background: rgb(133,99,61);
+  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  cursor: pointer;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .5px;
+}
+
+#academy-formulario > form > input::placeholder {
+  color: darkgray;
+  font-weight: bold;
+}
+
+#academy-banner {
+  margin-top: 1rem;
+}
+
+#academy-banner > img {
+  width: 100%;
+}
+
+/* Agende sua transformação */
+
+#agendamento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#agendamento > div {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#agendamento > div span {
+  font-size: 2rem;
+  color: #5c5346;
+  font-weight: 700;
+}
+
+#agendamento > div > p {
+  font-size: 0.8rem;
+
+  color: #4f5665;
+}
+
+#agendamento > div > img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+#agendamento-formulario-container {
+  
+width: 100%;
+}
+
+#agendamento > div:nth-child(2) form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#agendamento > div:nth-child(2) form > input {
+  all: unset;
+  width: 100%;
+  height: 3rem;
+  margin-bottom: 1rem;
+  background: transparent;
+  border: .17rem solid rgba(198,165,112,.7);
+  text-align: left;
+  padding-left: .5rem;
+  border-radius: .5rem;
+}
+
+#agendamento > div:nth-child(2) form  > button[type="submit"] {
+  all: unset;
+  color: white;
+  background: rgb(133,99,61);
+  background: -moz-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  background: linear-gradient(90deg, rgba(133,99,61,1) 0%, rgba(198,165,112,1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  cursor: pointer;
+  height: 3rem;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+  letter-spacing: .5px;
+  width: 50%;
+}
+
+label[for="cars"] {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #5C5346;
+  margin-bottom: 1.5rem;
+}
+
+select[name="servicos"] {
+  all: unset;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #5C5346;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6rem;
+  color: #5C5346;
+  margin-bottom: 2rem;
+}
+
+select[name="servicos"] > option {
+  width: 100%;
+}
+
+
+
+
+
 
 /* navbar */
 
