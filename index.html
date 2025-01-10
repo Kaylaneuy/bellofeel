@@ -7,7 +7,13 @@
   <title>BelloFeel</title>
   <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css">
+  <!-- bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- bootstrap icons -->
 
+  <script src="menu.js" defer></script>
+
+  <title>BelloFeel</title>
 
   <style>
     @font-face {
@@ -24,165 +30,186 @@
       font-family: BROLIMO-REGULAR;
       src: url(assets/font/BROLIMO-REGULAR.TTF);
     }
-  </style>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  </style> <!-- estilo-fonte -->
 
 </head>
 
 <body>
-    <!-- Botao Whats -->
-    <div class="buttonzap">
-      <a href="https://api.whatsapp.com/send/?phone=5584987436321&" class="icon" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i>
-      </a>
-    </div>
+  <div class="btn-zap">
+    <a href="https://api.whatsapp.com/send/?phone=5584987436321&text&type=phone_number&app_absent=0" class="icon" target="_blank">
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div> <!-- btn-zap -->
 
-    <!-- Navegação -->
-    <nav>
-      <!-- Logo -->
-      <section>
-        <img class="logo" src="/assets/img/black-logo.png" />
-        <div class="mobile-menu">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
-        </div>
-      </section>
-      <!-- Botões -->
-      <section>
-        <ul class="nav-list">
-          <li><a href="#123">Início</a></li>
-          <li><a href="#123">Sobre Nós</a></li>
-          <li><a href="#123">Profissionais</a></li>
-          <li><a href="#123">Unidades</a></li>
-          <li><a href="#123">Especialidades</a></li>
-          <li><a href="#123">Academy</a></li>
+  <!-- Navegação -->
+  <nav>
+    <!-- Logo -->
+    <div class="interface">
+      <div class="logo">
+        <a href="a">
+          <img src="/assets/img/black-logo.png" alt="logo" id="logo">
+        </a>
+      </div> <!-- logo -->
+
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="a">Início</a></li>
+          <li><a href="a">Sobre Nós</a></li>
+          <li><a href="a">Profissionais</a></li>
+          <li><a href="a">Unidades</a></li>
+          <li><a href="a">Academy</a></li>
         </ul>
-      </section>
-      <secition>
-        <button>Agente Sua Transformação</button>
-        </section>
+      </nav>
 
-    </nav>
+      <div class="btn-contato">
+        <a href="#">
+          <button>Agende Sua Transformação</button>
+        </a>
+      </div> <!-- btn-contato -->
 
-    <!-- Header -->
-    <header class="container">
-      <div>
-        <img src="assets/img/header-bg.jpeg" alt="BelloFeel - Beleza que se sente.">
-        <section>
-          <div>
-            <div>
-              <img src="assets/img/icon-micropigmentacao.png" alt="aaa">
-              <span>Micropigmentação</span>
-              <p>Destaque suas sobrancelhas de forma natural e harmoniosa, com técnicas precisas que valorizam sua
-                expressão.</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="assets/img/icon-limpeza-de-pele.png" alt="aaa">
-              <span>Limpeza de Pele</span>
-              <p>Revitalize sua pele com um cuidado profundo, garantindo uma aparência fresca, saudável e renovada.</p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <img src="assets/img/icon-tratamentos-faciais.png" alt="aaa">
-              <span>Tratamentos Faciais</span>
-              <p>Transforme sua pele com nossos tratamentos personalizados, projetados para realçar sua beleza e trazer
-                resultados visíveis.</p>
-            </div>
-          </div>
-        </section>
+      <div class="btn-abrir-menu" id="btn-menu">
+        <i class="bi bi-list"></i>
       </div>
-    </header>
 
-    <main class="container">
+      <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+          <i class="bi bi-x-lg"></i>
+        </div> <!-- btn-fechar -->
 
-      <!-- Sobre nós -->
+        <nav>
+          <ul>
+            <li><a href="a">Início</a></li>
+            <li><a href="a">Sobre Nós</a></li>
+            <li><a href="a">Profissionais</a></li>
+            <li><a href="a">Unidades</a></li>
+            <li><a href="a">Academy</a></li>
+            <li><a href="a">Agende Sua Transformação</a></li>
+          </ul>
+        </nav>
 
-      <section id="sobre-nos">
+      </div> <!-- menu-mobile -->
+      <div class="overlay-menu" id="overlay-menu"></div>
+    </div> <!-- interface -->
 
-        <div>
-          <span>Sobre Nós</span>
-          <p>Na Bellofeel, nosso objetivo é claro: transformar a confiança e a autoestima de cada cliente. Fundada por
-            <strong>Thalita Melo, Vinícius Cunha e Raquel Lima</strong>, nossa clínica se destaca pela dedicação, segurança e
-            excelência nos serviços oferecidos. Cada procedimento é realizado com <strong>paixão, cuidado e atenção aos
-            detalhes, criando histórias de transformação únicas</strong>. Com uma visão voltada para estética e bem-estar,
-            Thalita, Vinícius e Raquel uniram suas expertises para oferecer resultados transformadores, aliados à
-            praticidade e, acima de tudo, à segurança que nossos clientes merecem. <strong>Aqui, sua beleza e autoestima são
-            nossa prioridade!</strong></p>
-          <button>Saiba Mais</button>
-        </div>
+  </nav>
 
-        <div>
-          <img src="assets/img/sobre-nos-banner.jpg" alt="">
-        </div>
-
-      </section>
-
-
-
-      <!-- Destaque do Mês: Micropigmentação -->
-      <section id="destaque-do-mes">
-
-        <span>Destaque do Mês: Micropigmentação</span>
-        <p>Transforme suas sobrancelhas com a técnica de Micropigmentação, que garante naturalidade, precisão e
-          harmonia para o seu rosto. Este mês, aproveite condições especiais para realçar sua beleza com resultados
-          duradouros e personalizados</p>
-
-        <!-- Cards -->
+  <!-- Header -->
+  <header class="container">
+    <div>
+      <img src="assets/img/header-bg.jpeg" alt="BelloFeel - Beleza que se sente.">
+      <section>
         <div>
           <div>
-            <div class="card">
-              <div>
-                <span>Thalita Melo - Micropigmentação</span>
-                <p>Reconhecida por sua técnica exclusiva e resultados naturais. Com anos de experiência, ela
-                  transforma sobrancelhas, realçando a beleza única de cada cliente.</p>
-                <button>Agende um horário</button>
-              </div>
-              <div><img src="assets/img/destaque-do-mes-card-1.jpeg" alt=""></div>
-            </div>
-            <div class="card">
-              <div>
-                <span>Annalice - Micropigmentação</span>
-                <p>Especialista em Micropigmentação, com foco em sobrancelhas bem definidas e personalizadas.</p>
-                <button>Agende um horário</button>
-              </div>
-              <div><img src="assets/img/destaque-do-mes-card-2.jpeg" alt=""></div>
-            </div>
+            <img src="assets/img/icon-micropigmentacao.png" alt="aaa">
+            <span>Micropigmentação</span>
+            <p>Destaque suas sobrancelhas de forma natural e harmoniosa, com técnicas precisas que valorizam sua
+              expressão.</p>
           </div>
         </div>
-        <button>Aproveite nossas condições especiais e transforme sua
+        <div>
+          <div>
+            <img src="assets/img/icon-limpeza-de-pele.png" alt="aaa">
+            <span>Limpeza de Pele</span>
+            <p>Revitalize sua pele com um cuidado profundo, garantindo uma aparência fresca, saudável e renovada.</p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="assets/img/icon-tratamentos-faciais.png" alt="aaa">
+            <span>Tratamentos Faciais</span>
+            <p>Transforme sua pele com nossos tratamentos personalizados, projetados para realçar sua beleza e trazer
+              resultados visíveis.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Sobre nós -->
+
+    <section id="sobre-nos">
+
+      <div>
+        <span>Sobre Nós</span>
+        <p>Na Bellofeel, nosso objetivo é claro: transformar a confiança e a autoestima de cada cliente. Fundada por
+          <strong>Thalita Melo, Vinícius Cunha e Raquel Lima</strong>, nossa clínica se destaca pela dedicação, segurança e
+          excelência nos serviços oferecidos. Cada procedimento é realizado com <strong>paixão, cuidado e atenção aos
+            detalhes, criando histórias de transformação únicas</strong>. Com uma visão voltada para estética e bem-estar,
+          Thalita, Vinícius e Raquel uniram suas expertises para oferecer resultados transformadores, aliados à
+          praticidade e, acima de tudo, à segurança que nossos clientes merecem. <strong>Aqui, sua beleza e autoestima são
+            nossa prioridade!</strong>
+        </p>
+        <button>Saiba Mais</button>
+      </div>
+
+      <div>
+        <img src="assets/img/thalita.png" alt="" id="foto-thalita">
+      </div>
+
+    </section>
+
+
+
+    <!-- Destaque do Mês: Micropigmentação -->
+    <section id="destaque-do-mes">
+
+      <span>Destaque do Mês: Micropigmentação</span>
+      <p>Transforme suas sobrancelhas com a técnica de Micropigmentação, que garante naturalidade, precisão e
+        harmonia para o seu rosto. Este mês, aproveite condições especiais para realçar sua beleza com resultados
+        duradouros e personalizados</p>
+
+      <!-- Cards -->
+      <div>
+        <div>
+          <div class="card">
+            <div>
+              <span>Thalita Melo - Micropigmentação</span>
+              <p>Reconhecida por sua técnica exclusiva e resultados naturais. Com anos de experiência, ela
+                transforma sobrancelhas, realçando a beleza única de cada cliente.</p>
+              <button>Agende um horário</button>
+            </div>
+            <div><img src="assets/img/destaque-do-mes-card-1.jpeg" alt=""></div>
+          </div>
+          <div class="card">
+            <div>
+              <span>Annalice - Micropigmentação</span>
+              <p>Especialista em Micropigmentação, com foco em sobrancelhas bem definidas e personalizadas.</p>
+              <button>Agende um horário</button>
+            </div>
+            <div><img src="assets/img/destaque-do-mes-card-2.jpeg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      <button>Aproveite nossas condições especiais e transforme sua
         beleza!</button>
-      </section>
+    </section>
 
 
-      <!-- Conheça as Nossas Unidades -->
+    <!-- Conheça as Nossas Unidades -->
 
 
-      <section id="unidades">
+    <section id="unidades">
 
-        <div>
-          <span>Conheça as Nossas Unidades</span>
-          <p>A Bellofeel oferece duas unidades pensadas para o seu conforto e bem-estar. Em Lagoa Nova, você encontra
-            um ambiente moderno e acolhedor no coração de Natal. Já em Nova Parnamirim, contamos com um espaço
-            elegante e tranquilo, perfeito para quem busca momentos de cuidado e transformação. Escolha a unidade mais
-            próxima e viva a experiência Bellofeel!</p>
-          <button>Encontre a BelloFeel mais próxima de você!</button>
-        </div>
+      <div>
+        <span>Conheça as Nossas Unidades</span>
+        <p>A Bellofeel oferece duas unidades pensadas para o seu conforto e bem-estar. Em Lagoa Nova, você encontra
+          um ambiente moderno e acolhedor no coração de Natal. Já em Nova Parnamirim, contamos com um espaço
+          elegante e tranquilo, perfeito para quem busca momentos de cuidado e transformação. Escolha a unidade mais
+          próxima e viva a experiência Bellofeel!</p>
+        <button>Encontre a BelloFeel mais próxima de você!</button>
+      </div>
 
-        <div>
-          <img src="assets/img/unidade-1.jpeg" alt="">
-        </div>
+      <div>
+        <img src="assets/img/unidade-1.jpeg" alt="">
+      </div>
 
-      </section>
+    </section>
 
-      <!-- Nossas Especialidades -->
-      <section id="especialidades">
-        <div>
+    <!-- Nossas Especialidades -->
+    <section id="especialidades">
+      <div>
         <span>Nossas Especialidades</span>
         <p>Na Bellofeel, oferecemos procedimentos de alta qualidade, como micropigmentação, limpeza de pele e
           tratamentos faciais, todos realizados com segurança, cuidado e atenção aos detalhes para realçar sua beleza
@@ -229,172 +256,128 @@
         </div>
         <button>Reserve Seu Horário e Transforme Sua Beleza!</button>
       </div>
-      </section>
+    </section>
 
-      <!-- BelloFeel Academy -->
+    <!-- BelloFeel Academy -->
 
-      <section id="academy">
+    <section id="academy">
 
-        <div>
-          <span>BelloFeel Academy</span>
-          <p>A Bellofeel Academy é o nosso espaço <strong>dedicado à formação de profissionais</strong> na área da estética. Com cursos
-            exclusivos, como <strong>Micropigmentação</strong> e <strong>Epilação Facial Avançada</strong>, oferecemos técnicas modernas, seguras e
+      <div>
+        <span>BelloFeel Academy</span>
+        <p>A Bellofeel Academy é o nosso espaço <strong>dedicado à formação de profissionais</strong> na área da estética. Com cursos
+          exclusivos, como <strong>Micropigmentação</strong> e <strong>Epilação Facial Avançada</strong>, oferecemos técnicas modernas, seguras e
           <strong>resultados de alta qualidade</strong>. Cada curso é elaborado com a excelência da Bellofeel, para que você se
-            destaque no mercado da estética. <strong>Garanta sua vaga preenchendo o formulário e entre para a nossa lista de
-            espera dos próximos cursos!</strong></p>
+          destaque no mercado da estética. <strong>Garanta sua vaga preenchendo o formulário e entre para a nossa lista de
+            espera dos próximos cursos!</strong>
+        </p>
 
-          <!-- Formulário -->
-          <div id="academy-formulario">
-            <form>
-              <input type="text" name="nome" placeholder="Nome" id="nome">
-              <input type="tel" pattern="\([0-9]{2}\) [0-9]{1}[0-9]{4}-[0-9]{4}" name="telefone" placeholder="Telefone  (DDD + Número)" id="telefone">
-              <button type="submit">Transforme Sua Beleza </button>
-            </form>
-          </div>
-
+        <!-- Formulário -->
+        <div id="academy-formulario">
+          <form>
+            <input type="text" name="nome" placeholder="Nome" id="nome">
+            <input type="tel" pattern="\([0-9]{2}\) [0-9]{1}[0-9]{4}-[0-9]{4}" name="telefone" placeholder="Telefone  (DDD + Número)" id="telefone">
+            <button type="submit">Transforme Sua Beleza </button>
+          </form>
         </div>
 
-        <div id="academy-banner">
-          <img src="assets/img/academy-banner.jpeg" alt="">
-        </div>
+      </div>
 
-      </section>
+      <div id="academy-banner">
+        <img src="assets/img/academy-banner.jpeg" alt="">
+      </div>
 
-      <!-- Instagram -->
-      <h1>FAZER DEPOIS</h1>
+    </section>
 
-      <link rel="stylesheet" href="styles.css/owl.carousel.min.css">
-      <link rel="stylesheet" href="styles.css/owl.theme.default.min.css">
+    <!-- Instagram -->
+    <h1>FAZER DEPOIS</h1>
 
-      <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <link rel="stylesheet" href="styles.css/owl.carousel.min.css">
+    <link rel="stylesheet" href="styles.css/owl.theme.default.min.css">
 
-      <script src="js/jquery.min.js"></script>
-      <script src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
 
-      <div id="instafeed"></div>
-      <script type="text/javascript">
-        var feed = new InstaFeed({
-          acessToken:'o token bct',
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <div id="instafeed"></div>
+    <script type="text/javascript">
+      var feed = new InstaFeed({
+        acessToken: 'o token bct',
         limit: 4,
         template: '<div class="item"><a href="{{link}}"  target="_blank"><img title="{{caption}}" src="{{image}}" /></a></div>'
 
-        });
-        feed.run();
-      </script>
+      });
+      feed.run();
+    </script>
 
-      <!-- Agende sua transformação -->
+    <!-- Agende sua transformação -->
 
-      <section id="agendamento">
+    <section id="agendamento">
 
-        <div>
-          <img src="assets/img/loc-lagoa-nova.png" alt="Localização em Lagoa Nova">
-          <img src="assets/img/loc-nova-parnamirim.png" alt="Localização em Nova Parnamirim">
+      <div>
+        <a href="https://maps.app.goo.gl/RrJjm2tTQUSX4G4o8"> <img src="assets/img/loc-lagoa-nova.png" alt="Localização em Lagoa Nova" > </a>
+        <a href="https://maps.app.goo.gl/UA3eLiogzeexvvq19">         <img src="assets/img/loc-nova-parnamirim.png" alt="Localização em Nova Parnamirim"> </a>
+      </div>
+
+      <div>
+        <span>Agende Sua Transformação</span>
+        <p>Escolha o serviço que mais combina com você e reserve seu horário de forma simples e rápida. Nossa equipe
+          está pronta para oferecer uma experiência única e resultados que realçam sua beleza.</p>
+
+        <!-- Formulário -->
+        <div id="agendamento-formulario-container">
+          <form>
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="tel" pattern="\([0-9]{2}\) [0-9]{1}[0-9]{4}-[0-9]{4}" name="telefone" placeholder="Telefone  (DDD + Número)" id="telefone2">
+
+            <label for="cars">Tipo de Serviços</label>
+
+            <select name="servicos" id="cars">
+              <option value="" disabled selected>Escolha uma opção</option>
+              <option value="volvo">Brow Lamination</option>
+              <option value="saab">Cover Scar</option>
+              <option value="mercedes">Dema Planning</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+
+          </form>
         </div>
 
-        <div>
-          <span>Agende Sua Transformação</span>
-          <p>Escolha o serviço que mais combina com você e reserve seu horário de forma simples e rápida. Nossa equipe
-            está pronta para oferecer uma experiência única e resultados que realçam sua beleza.</p>
+      </div>
 
-          <!-- Formulário -->
-          <div id="agendamento-formulario-container">
-            <form>
-              <input type="text" name="nome" id="nome" placeholder="Nome">
-              <input type="tel" pattern="\([0-9]{2}\) [0-9]{1}[0-9]{4}-[0-9]{4}" name="telefone" placeholder="Telefone  (DDD + Número)" id="telefone2">
+    </section>
 
-              <label for="cars">Tipo de Serviços</label>
+    <!-- Footer -->
 
-              <select name="servicos" id="cars">
-                <option value="" disabled selected>Escolha uma opção</option>
-                <option value="volvo">Brow Lamination</option>
-                <option value="saab">Cover Scar</option>
-                <option value="mercedes">Dema Planning</option>
-              </select>
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img src="assets/img/black-logo.png" alt="logo-footer" id="logo">
+            </div> <!-- logo-footer -->
+            <div class="texto-footer">
+              <p>Contato</p>
+              <p> <i class="bi bi-telephone"></i> <a href="kksksks">(84) 98743-6321</a> </p>
+              <p> <i class="bi bi-envelope"></i> <a href="kksksks">(84) 98743-6321</a> </p>
+              <p>Localização</p>
+              <p> <i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/RrJjm2tTQUSX4G4o8">Av. Miguel Castro, 1134 - Lagoa Nova</a> </p>
+              <p> <i class="bi bi-geo-alt"></i> <a href="https://maps.app.goo.gl/UA3eLiogzeexvvq19"> Av. Maria Lacerda Montenegro, 2010 - Nova Parnamirim </a> </p>
+            </div> <!-- texto-footer -->
+          </div> <!-- flex -->
+        </div> <!-- line-footer -->
 
-              <button type="submit">Enviar</button>
+        <div class="line-footer borda">
+          <p><i class="bi bi-envope"></i> <a href="mailto:contato.@kaylane.com">contato.@.com</a></p>
+        </div> <!-- line-footer -->
+      </div> <!-- interface -->
+    </footer>
 
-            </form>
-          </div>
+  </main>
+  <script src="mobile-navbar.js"></script>
 
-        </div>
-
-      </section>
-
-      <!-- Footer -->
-
-      <footer>
-        <div id="footer_content">
-          <div id="footer_contacts">
-            <img src="assets/img/black-logo.png" alt="">
-
-            <div id="footer_social_media">
-              <a href="#" class="footer-link" id="instagram">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-
-              <a href="#" class="footer-link" id="facebook">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-
-              <a href="#" class="footer-link" id="whatsapp">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </div>
-          </div>
-
-          <ul class="footer-list">
-            <li>
-              <h3>Texto</h3>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Contato</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Localização</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Email</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <h3>Texto</h3>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Contato</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Localização</a>
-            </li>
-            <li>
-              <a href="#" class="footer-link">Email</a>
-            </li>
-          </ul>
-
-          <div id="footer_subscribe">
-            <h3>texto</h3>
-            <p>texto 2</p>
-
-            <div id="input_group">
-              <input type="email" id="email">
-              <button>
-                <i class="fa-regular fa-envelope"></i>
-              </button>
-
-            </div>
-          </div>
-          <div id="footer_copyright">
-            &#169
-            2025 all rights reserved
-
-          </div>
-      </footer>
-
-    </main>
-    <script src="mobile-navbar.js"></script>
-
-    <script src="scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
