@@ -267,7 +267,7 @@ header > div > img {
   margin-bottom: 2rem;
 }
 
-header > div > section {
+header>div>section {
   width: 100%;
   height: 100%;
   display: flex;
@@ -278,52 +278,108 @@ header > div > section {
   text-align: center;
 }
 
-header > div > section > div > div {
+header>div>section>div>div {
   display: flex;
   flex-direction: column;
 
   align-items: center;
 }
 
-header > div > section > div > div > img {
+header>div>section>div>div>img {
   width: 3.13rem;
   height: 3.13rem;
   border-radius: 50%;
 
   background: rgb(133, 99, 61);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%,
-    rgba(238, 199, 137, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%,
-    rgba(238, 199, 137, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%,
-    rgba(238, 199, 137, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#eec789",GradientType=1);
+  background: -moz-linear-gradient(90deg,
+      rgba(133, 99, 61, 1) 0%,
+      rgba(198, 165, 112, 1) 50%,
+      rgba(238, 199, 137, 1) 100%);
+  background: -webkit-linear-gradient(90deg,
+      rgba(133, 99, 61, 1) 0%,
+      rgba(198, 165, 112, 1) 50%,
+      rgba(238, 199, 137, 1) 100%);
+  background: linear-gradient(90deg,
+      rgba(133, 99, 61, 1) 0%,
+      rgba(198, 165, 112, 1) 50%,
+      rgba(238, 199, 137, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d", endColorstr="#eec789", GradientType=1);
 
   margin-bottom: 0.5rem;
 }
 
-header > div > section > div > div > span {
+header>div>section>div>div>span {
   font-size: 1.2rem;
   color: #6a655e;
 }
 
-header > div > section > div > div > p {
+header>div>section>div>div>p {
   font-size: 0.8rem;
 
   color: #4f5665;
 }
+
+header>div>section>.line {
+  display: none;
+}
+
+@media (min-width: 999px) {
+  header>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  header>div>section>div>div>img {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  header>div>section>div>div {
+    position: relative;
+    top: -2rem;
+  }
+
+  header>div>section>div>div>span {
+    font-size: 1.5rem;
+  }
+
+  header>div>section {
+
+    bottom: -3rem;
+
+    background: white;
+
+    border-radius: .5rem;
+
+    flex-direction: row;
+
+    width: 80%;
+
+    height: 11rem;
+
+    padding: 0px 1rem;
+
+    position: absolute;
+
+    align-items: center;
+
+    justify-content: space-between;
+  }
+
+  header>div>img {
+    margin-bottom: 0;
+  }
+
+  header>div>section>.line {
+    display: block;
+    height: 70%;
+    border: 1px solid #EEEFF2;
+  }
+}
+
 
 main {
   display: flex;
@@ -341,57 +397,53 @@ main {
   width: 100%;
 
   background: rgb(232, 208, 174);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(232, 208, 174, 1) 0%,
-    rgba(196, 164, 111, 0.2) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(232, 208, 174, 1) 0%,
-    rgba(196, 164, 111, 0.2) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(232, 208, 174, 1) 0%,
-    rgba(196, 164, 111, 0.2) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d0ae",endColorstr="#c4a46f",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(232, 208, 174, 1) 0%, rgba(196, 164, 111, 0.2) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(232, 208, 174, 1) 0%, rgba(196, 164, 111, 0.2) 100%);
+  background: linear-gradient(90deg, rgba(232, 208, 174, 1) 0%, rgba(196, 164, 111, 0.2) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d0ae", endColorstr="#c4a46f", GradientType=1);
+
 }
 
-#sobre-nos > div {
+#sobre-nos>div {
   width: 90%;
   text-align: center;
 }
 
-#sobre-nos > div span {
+#sobre-nos>div h2 {
+  all: unset;
   font-size: 2rem;
   color: #5c5346;
   font-weight: 700;
 }
 
 /* Banner Sobre Nos */
-#sobre-nos > div:nth-child(2) {
+#sobre-nos>div:nth-child(2) {
   margin-top: 2rem;
   padding-bottom: 1rem;
+  
+
   display: flex;
   width: 90%;
   align-items: flex-start;
   justify-content: center;
 }
 
-#sobre-nos > div img {
+#sobre-nos>div img {
   width: 100%;
   height: auto;
   border-radius: 1rem;
 }
 
-#sobre-nos > div p {
+#sobre-nos>div p {
   text-align: initial;
   color: #7e7260;
 }
 
-#sobre-nos > div button {
+#sobre-nos>div p>br {
+  display: none;
+}
+
+#sobre-nos>div button {
   text-align: initial;
   width: 15rem;
   height: 3.12rem;
@@ -402,23 +454,58 @@ main {
   font-weight: bold;
 
   background: rgb(133, 99, 61);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d", endColorstr="#c6a570", GradientType=1);
   cursor: pointer;
+}
+
+@media (min-width: 999px) {
+  #sobre-nos {
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  #sobre-nos>div {
+
+    height: 100%;
+
+    text-align: start;
+
+    padding: 2rem 3rem;
+  }
+
+  #sobre-nos>div img {
+    width: auto;
+    height: 31rem;
+  }
+
+  #sobre-nos>div button {
+
+    height: 4rem;
+
+    font-size: 1.8rem;
+  }
+
+  #sobre-nos>div p {
+    font-size: 1.2rem;
+  }
+
+  #sobre-nos>div p>br {
+    display: block;
+  }
+
+  #sobre-nos>div h2 {
+
+    font-size: 3.5rem;
+
+    display: block;
+
+    margin-bottom: 2rem;
+  }
 }
 
 /* Destaque do mes */
@@ -430,57 +517,64 @@ main {
   justify-content: center;
   width: 100%;
 
-  padding: 1rem 0.5rem;
+  padding: 1rem .5rem;
 
   background-color: #fefaf5;
 }
 
-#destaque-do-mes > button {
+#destaque-do-mes>button {
   display: none;
 }
 
-#destaque-do-mes > span {
+#destaque-do-mes>span {
   font-size: 2rem;
   color: #5c5346;
   font-weight: 700;
 
   text-align: center;
-}
+} 
+
 
 #destaque-do-mes p {
   text-align: center;
   color: #7e7260;
 }
 
+#destaque-do-mes>p>bt:not(#manter) {
+  display: none;
+}
+
+
+
 /* Cards destaque do mes */
 
 .card {
-  background-color: white;
-
+  background-color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding: 2rem 0;
-  margin: 1rem 0;
+  
+  padding: 2rem 0 ;
+  margin: 1rem 0 ;
 
-  border-radius: 0.5rem;
+  border-radius: .5rem;
 }
 
-.card > div {
+.card>div {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.card > div:nth-child(2) > img {
+.card>div:nth-child(2)>img {
   width: 100%;
   max-height: 16rem;
 }
 
-.card > div > span {
+.card>div>span {
   width: 100%;
   display: block;
 
@@ -491,9 +585,10 @@ main {
   color: #5c5346;
 }
 
-.card > div > p {
+.card>div>p {
   text-align: justify;
 }
+
 
 .card > div > button {
   text-align: initial;
@@ -506,26 +601,66 @@ main {
   font-weight: bold;
 
   background: rgb(133, 99, 61);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d", endColorstr="#c6a570", GradientType=1);
   cursor: pointer;
 
   margin-bottom: 1rem;
 }
+
+@media (min-width: 999px) {
+  #destaque-do-mes>span {
+
+    display: block;
+
+    font-size: 3.5rem;
+
+    margin-top: 2rem;
+
+  }
+
+  /* Cards destaque do mes */
+
+  #cards-container>div {
+
+    display: grid;
+
+    width: 100%;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 3rem;
+
+  }
+
+  .card {
+
+flex-direction: row;
+
+padding: 1rem 1rem;
+
+box-shadow: 3px 3px 8px -6px;
+
+}
+
+  .card>div:nth-child(2)>img {
+    height: 16rem;
+    width: auto;
+  }
+
+  .card>div {
+
+    align-items: flex-start;
+
+  }
+
+  .card>div>span,p {
+    text-align: left !important;
+  }
+}
+
 
 /* Conheça nossas unidades */
 
@@ -533,32 +668,21 @@ main {
   width: 100%;
   height: auto;
 
+  
   display: flex;
   flex-direction: column;
   align-items: center;
 
   background: rgb(232, 208, 174);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(232, 208, 174, 1) 0%,
-    rgba(196, 164, 111, 0.3) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(232, 208, 174, 1) 0%,
-    rgba(196, 164, 111, 0.3) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(232, 208, 174, 1) 0%,
-    rgba(196, 164, 111, 0.3) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d0ae",endColorstr="#c4a46f",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(232, 208, 174, 1) 0%, rgba(196, 164, 111, 0.3) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(232, 208, 174, 1) 0%, rgba(196, 164, 111, 0.3) 100%);
+  background: linear-gradient(90deg, rgba(232, 208, 174, 1) 0%, rgba(196, 164, 111, 0.3) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e8d0ae", endColorstr="#c4a46f", GradientType=1);
 
   padding-bottom: 1rem;
 }
 
-#unidades > div {
+#unidades>div {
   width: 90%;
   display: flex;
   flex-direction: column;
@@ -566,7 +690,7 @@ main {
   justify-content: center;
 }
 
-#unidades > div button {
+#unidades>div button {
   width: 15rem;
   text-align: center;
   font-size: 1rem;
@@ -575,28 +699,16 @@ main {
   font-weight: bold;
   align-self: center;
   background: rgb(133, 99, 61);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d", endColorstr="#c6a570", GradientType=1);
   cursor: pointer;
   margin-bottom: 1rem;
   padding: 0.5rem;
 }
 
-#unidades > div > span {
+#unidades>div>span {
   font-size: 2rem;
   color: #5c5346;
   font-weight: 700;
@@ -604,7 +716,7 @@ main {
   text-align: center;
 }
 
-#unidades > div img {
+#unidades>div img {
   width: 100%;
   height: auto;
   border-radius: 1rem;
@@ -616,6 +728,7 @@ main {
   width: 100%;
   height: auto;
 
+  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -625,7 +738,7 @@ main {
   border-radius: 0.5rem;
 }
 
-#especialidades > div {
+#especialidades>div {
   width: 95%;
   display: flex;
   flex-direction: column;
@@ -635,7 +748,8 @@ main {
   padding: 1rem;
 }
 
-.card > div > div {
+
+.card>div>div {
   display: flex;
   flex-direction: column;
 
@@ -645,12 +759,13 @@ main {
   width: 90%;
 }
 
-.card > div > div > div > img {
+.card>div>div>div>img {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-#especialidades > div > span {
+
+#especialidades>div>span {
   font-size: 2rem;
   color: #5c5346;
   font-weight: 500;
@@ -658,30 +773,18 @@ main {
   text-align: center;
 }
 
-#especialidades > div > p {
+#especialidades>div>p {
   text-align: initial;
   color: #7e7260;
 }
 
-#especialidades > div > button {
+#especialidades>div>button {
   color: white;
   background: rgb(133, 99, 61);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d", endColorstr="#c6a570", GradientType=1);
   cursor: pointer;
   height: 3rem;
   padding: 0.5rem;
@@ -689,12 +792,13 @@ main {
 }
 
 /* Cards das especialidades */
-.card > div > div > span {
+.card>div>div>span {
   font-size: 2rem;
   font-weight: bolder;
   text-align: left;
 }
-.card > div > div > p {
+
+.card>div>div>p {
   color: #7e7260;
 }
 
@@ -710,7 +814,7 @@ main {
   background-color: #fefaf5;
 }
 
-#academy > div {
+#academy>div {
   width: 95%;
   display: flex;
   align-items: center;
@@ -718,14 +822,14 @@ main {
   flex-direction: column;
 }
 
-#academy > div > span {
+#academy>div>span {
   font-size: 2rem;
   font-weight: bolder;
   width: 100%;
   text-align: c;
 }
 
-#academy > div > p {
+#academy>div>p {
   color: #7e7260;
 }
 
@@ -738,7 +842,7 @@ main {
   justify-content: center;
 }
 
-#academy-formulario > form {
+#academy-formulario>form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -746,39 +850,27 @@ main {
   width: 80%;
 }
 
-#academy-formulario > form > input {
+#academy-formulario>form>input {
   all: unset;
   width: 100%;
   height: 3rem;
   margin-bottom: 1rem;
   background: transparent;
-  border: 0.17rem solid rgba(198, 165, 112, 0.7);
+  border: .17rem solid rgba(198, 165, 112, .7);
 
   /* this doesn't work */
-  padding-left: 0.5rem;
-  border-radius: 0.5rem;
+  padding-left: .5rem;
+  border-radius: .5rem;
 }
 
-#academy-formulario > form > button[type="submit"] {
+#academy-formulario>form>button[type="submit"] {
   all: unset;
   color: white;
   background: rgb(133, 99, 61);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d", endColorstr="#c6a570", GradientType=1);
   cursor: pointer;
   height: 3rem;
   padding: 0 1rem;
@@ -788,7 +880,7 @@ main {
   letter-spacing: 0.5px;
 }
 
-#academy-formulario > form > input::placeholder {
+#academy-formulario>form>input::placeholder {
   color: darkgray;
   font-weight: bold;
 }
@@ -797,7 +889,7 @@ main {
   margin-top: 1rem;
 }
 
-#academy-banner > img {
+#academy-banner>img {
   width: 100%;
 }
 
@@ -811,7 +903,7 @@ main {
   width: 100%;
 }
 
-#agendamento > div {
+#agendamento>div {
   width: 90%;
   text-align: center;
   display: flex;
@@ -820,66 +912,55 @@ main {
   justify-content: flex-start;
 }
 
-#agendamento > div span {
+#agendamento>div span {
   font-size: 2rem;
   color: #5c5346;
   font-weight: 700;
 }
 
-#agendamento > div > p {
+#agendamento>div>p {
   font-size: 0.8rem;
 
   color: #4f5665;
 }
 
-#agendamento > div > img {
+#agendamento>div>img {
   width: 100%;
   margin-bottom: 2rem;
 }
 
 #agendamento-formulario-container {
+
   width: 100%;
 }
 
-#agendamento > div:nth-child(2) form {
+#agendamento>div:nth-child(2) form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#agendamento > div:nth-child(2) form > input {
+#agendamento>div:nth-child(2) form>input {
   all: unset;
   width: 100%;
   height: 3rem;
   margin-bottom: 1rem;
   background: transparent;
-  border: 0.17rem solid rgba(198, 165, 112, 0.7);
+  border: .17rem solid rgba(198, 165, 112, .7);
   text-align: left;
   padding-left: 0.5rem;
   border-radius: 0.5rem;
 }
 
-#agendamento > div:nth-child(2) form > button[type="submit"] {
+#agendamento>div:nth-child(2) form>button[type="submit"] {
   all: unset;
   color: white;
   background: rgb(133, 99, 61);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(133, 99, 61, 1) 0%,
-    rgba(198, 165, 112, 1) 50%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d",endColorstr="#c6a570",GradientType=1);
+  background: -moz-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: -webkit-linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  background: linear-gradient(90deg, rgba(133, 99, 61, 1) 0%, rgba(198, 165, 112, 1) 50%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85633d", endColorstr="#c6a570", GradientType=1);
   cursor: pointer;
   height: 3rem;
   padding: 0 1rem;
@@ -912,8 +993,114 @@ select[name="servicos"] {
   margin-bottom: 2rem;
 }
 
-select[name="servicos"] > option {
+select[name="servicos"]>option {
   width: 100%;
+}
+
+
+
+
+
+
+/* navbar */
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  height: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #ebcea6;
+  height: 5rem;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 30px;
+  height: 2px;
+  background: #565555;
+  margin: 8px;
+  transition: 0.3s;
+}
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #ebcea6;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(50px);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate (-5px, -7px);
 }
 
 /* footer */
@@ -987,10 +1174,17 @@ footer .flex {
   flex-direction: column;
 }
 
-footer .line-footer {
-  text-align: center;
-}
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
 
-footer {
-  padding: 80px 8%;
+  @media screen and (max-width: 426px) {
+    #footer_content {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 3rem 2rem;
+    }
+  }
+}
 }
